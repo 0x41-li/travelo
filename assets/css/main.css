@@ -225,6 +225,7 @@
 }
 
 /* || General */
+
 *,
 html,
 body,
@@ -245,7 +246,12 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* || Utitlies */
+
 .ctn {
   width: 100% !important;
   margin: auto !important;
@@ -549,7 +555,7 @@ main {
   flex-flow: column nowrap;
   justify-content: center;
   gap: 10px;
-  box-shadow: 10px 40px 50px #E5E9F6;
+  box-shadow: 10px 40px 50px #e5e9f6;
   border-radius: 10px;
   padding: 30px 20px;
   height: 300px;
@@ -559,7 +565,7 @@ main {
 .second__img-wrapper {
   width: 103px;
   height: 97px;
-  background-color: #EBF0FE;
+  background-color: #ebf0fe;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -580,7 +586,62 @@ main {
   font-style: normal;
 }
 
+/* | Third Sec */
 
+.third {
+  padding: 50px 0px;
+  background-color: #f1faff;
+}
+
+.third__h2 {
+  font-family: "Proxima Nova Alt Rg", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 40px;
+  text-align: center;
+  margin: 20px 0px;
+}
+
+/* third body */
+.third__background-design {
+  display: none;
+}
+
+/* third menu */
+.third__menu-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.third__menu {
+  flex: 0 0 80%;
+  display: flex;
+  flex-flow: column nowrap;
+  margin-bottom: 20px;
+}
+
+.third__menu__li {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.third__menu__link {
+  padding: 10px;
+  line-height: 100%;
+  color: black;
+  font-family: "Proxima Nova Alt Lt", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.third__menu__link--active {
+  color: #163235;
+}
 
 /* || 768px and above */
 @media screen and (min-width: 768px) {
@@ -700,7 +761,6 @@ main {
     margin-left: 20px;
   }
 
-
   /* | Second Sec */
 
   .second {
@@ -793,12 +853,10 @@ main {
     flex: 1 0 40%;
     max-width: none;
   }
-
 }
 
 /* || 1440px and above */
 @media screen and (min-width: 1440px) {
-
   /* || Utitlities */
 
   .ctn {
@@ -814,11 +872,10 @@ main {
   /* second box wrapper */
   .second__box-wrapper {
     justify-content: space-between;
-    gap: 0px
+    gap: 0px;
   }
 
   .second__box {
     flex: 0 0 300px;
   }
-
 }
