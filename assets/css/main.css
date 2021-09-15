@@ -261,6 +261,10 @@ img {
   border: none !important;
 }
 
+.hide-on-mobile {
+  display: none;
+}
+
 /* || Website Sections */
 
 /* | Header */
@@ -600,6 +604,7 @@ main {
   font-size: 40px;
   text-align: center;
   margin: 20px 0px;
+  margin-bottom: 40px;
 }
 
 /* third body */
@@ -615,8 +620,9 @@ main {
   display: inline-flex;
   flex-flow: column nowrap;
   gap: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   width: 90%;
+  max-width: 400px;
 }
 
 .third__drop-down-box {
@@ -644,12 +650,11 @@ main {
   height: 0;
 }
 
-
 .third__menu__li {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 2px solid #4469e262
+  border-bottom: 2px solid #4469e262;
 }
 
 .third__menu__tab {
@@ -677,6 +682,119 @@ main {
 .third__angle-down {
   margin-top: 2px;
   color: #fff;
+}
+
+/* third destinations */
+
+.third__destinations-slider {
+  overflow: hidden;
+}
+
+.third__destinations-container {
+  position: relative;
+  left: 0;
+  display: flex;
+  transition: left 1s;
+}
+
+.third__destinations-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+  gap: 40px;
+  flex: 0 0 100%;
+}
+
+.third__dest-box {
+  max-width: 552px;
+}
+
+.third__dest-box__h2 {
+  font-size: 38px;
+  font-family: "Proxima Nova Alt Lt", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: #163235;
+  margin-bottom: 10px;
+}
+
+.third__dest-box__para {
+  font-size: 26px;
+  font-family: "Proxima Nova Alt Rg", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: #163235;
+  margin-bottom: 20px;
+}
+
+.third__dest-box__info-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column nowrap;
+  gap: 10px;
+}
+
+/* left info */
+.third__dest-box__left-info {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.third__left-info__icons-ul {
+  display: flex;
+  gap: 6px;
+}
+
+.third__left-info__icons-li {
+  display: flex;
+}
+
+.third__left-info__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1c4961;
+  width: 33px;
+  height: 33px;
+  padding: 8px;
+  border-radius: 100px;
+}
+
+.third__right-info__distance {
+  font-family: "Proxima Nova Alt Rg", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: #163235;
+  font-size: 22px;
+}
+
+/* right info */
+.third__dest-box__right-info {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+.third__left-info__price {
+  font-size: 31px;
+  font-family: "Proxima Nova Alt Lt", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: #163235;
+}
+
+.third__right-info__time {
+  font-family: "Proxima Nova Alt Rg", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: #163235;
+  font-size: 22px;
 }
 
 /* || 768px and above */
@@ -826,6 +944,10 @@ main {
     box-shadow: none;
   }
 
+  .hide-on-desktop {
+    display: none;
+  }
+
   /* || Header */
 
   .header-wrapper {
@@ -889,6 +1011,89 @@ main {
     flex: 1 0 40%;
     max-width: none;
   }
+
+  /* | Third Sec */
+
+  .third__body {
+    position: relative;
+  }
+
+  /* The menu */
+  .third__menu-for-desktop {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+
+  .third__menu-desktop-list {
+    display: flex;
+    width: 100%;
+  }
+
+  .third__menu-desktop__li {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .third__menu__tab {
+    cursor: pointer;
+    font-size: 20px;
+    padding: 20px 0px;
+    transition: color 0.4s;
+  }
+
+  .third__menu__tab:hover {
+    background-color: transparent;
+    color: #1c4961;
+  }
+
+  .third__menu__tab--active {
+    color: #1c4961;
+  }
+
+  /* The bottom line functionality */
+  .third__bottom-slider {
+    position: relative;
+    width: 100%;
+    height: 6px;
+  }
+
+  .third__default-line {
+    position: absolute;
+    top: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #a7a7a7;
+  }
+
+  .third__moving-line {
+    position: absolute;
+    left: 0px;
+    top: -2px;
+    width: 100px;
+    height: 4px;
+    background-color: #1c4961;
+    transition: left 1s;
+  }
+
+  /* Destinations boxes */
+  .third__destinations-wrapper {
+    flex-flow: row wrap;
+    padding: 0;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .third__dest-box {
+    flex: 1 0 40%;
+  }
 }
 
 /* || 1440px and above */
@@ -913,5 +1118,46 @@ main {
 
   .second__box {
     flex: 0 0 300px;
+  }
+
+  /* | Third Sec */
+
+  /* Destinations Boxes */
+
+  .third__dest-box {
+    flex: 1 1 30%;
+    height: 620px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+  }
+
+  .third__menu__tab {
+    font-size: 26px;
+  }
+
+  .third__dest-box__info-wrapper {
+    justify-self: flex-end;
+  }
+
+  /* third desin background */
+  .third__background-design {
+    display: block;
+  }
+
+  .points {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+  }
+
+  .points:nth-child(2) {
+    top: unset;
+    left: unset;
+    bottom: 310px;
+    right: 0;
+    transform: translate(50%, 50%);
+
   }
 }
