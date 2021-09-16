@@ -22,7 +22,7 @@ function init() {
       slidesOffsetAfter: 80,
       breakpoints : {
         768: {
-          spaceBetween: 60
+          spaceBetween: 60,
         }
       }
     });
