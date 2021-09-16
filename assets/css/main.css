@@ -595,6 +595,7 @@ main {
 .third {
   padding: 50px 0px;
   background-color: #f1faff;
+  overflow: hidden;
 }
 
 .third__h2 {
@@ -668,6 +669,7 @@ main {
   flex: 1;
   text-align: center;
   transition: background-color 0.4s;
+  cursor: pointer;
 }
 
 .third__menu__tab:hover {
@@ -795,6 +797,70 @@ main {
   font-style: normal;
   color: #163235;
   font-size: 22px;
+}
+
+/* | Fourth Sec */
+
+.fourth {
+  padding: 40px 20px;
+}
+
+.fourth__h2 {
+  font-size: 40px;
+  font-family: "Proxima Nova Alt Rg", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.fourth__blogs-wrapper {
+  display: grid;
+  row-gap: 20px;
+}
+
+.fourth__blog-box {
+  height: 140px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  transition: background-size 1s;
+}
+
+.fourth__blog-link div.fourth__blog-box:hover {
+  background-size: 110%;
+}
+
+.fourth__blog-link:nth-child(1) .fourth__blog-box {
+  background: linear-gradient(rgba(65, 65, 65, 0.5), rgba(65, 65, 65, 0.5)),
+    url(/assets/images/fourth-section/mount-kilimanjaro.png) no-repeat center
+      bottom;
+  background-size: 100%;
+}
+
+.fourth__blog-link:nth-child(2) .fourth__blog-box {
+  background: linear-gradient(rgba(65, 65, 65, 0.5), rgba(65, 65, 65, 0.5)),
+    url(/assets/images/fourth-section/plane_s-window.png) no-repeat center
+      bottom;
+  background-size: 100%;
+}
+
+.fourth__blog-link:nth-child(3) .fourth__blog-box {
+  background: linear-gradient(rgba(65, 65, 65, 0.5), rgba(65, 65, 65, 0.5)),
+    url(/assets/images/fourth-section/female-on-a-frontyard.png) no-repeat
+      center bottom;
+  background-size: 100%;
+}
+
+.fourth__h3 {
+  color: white;
+  font-family: "Proxima Nova Alt Rg", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 /* || 768px and above */
@@ -1094,6 +1160,26 @@ main {
   .third__dest-box {
     flex: 1 0 40%;
   }
+
+  /* | Fourth Sec */
+
+  .fourth {
+    padding: 60px 0px;
+  }
+
+  .fourth__blogs-wrapper {
+    gap: 20px;
+    grid-template-columns: calc(60% - 10px) calc(40% - 10px);
+    grid-template-rows: 120px 120px;
+  }
+
+  .fourth__blog-link:nth-child(1) {
+    grid-row: 1 / 3;
+  }
+
+  .fourth__blog-link .fourth__blog-box {
+    height: 100%;
+  }
 }
 
 /* || 1440px and above */
@@ -1158,6 +1244,21 @@ main {
     bottom: 310px;
     right: 0;
     transform: translate(50%, 50%);
+  }
 
+  /* | Fourth Sec */
+
+  .fourth {
+    padding: 80px 0px;
+  }
+
+  .fourth__blogs-wrapper {
+    gap: 30px;
+    grid-template-columns: calc(60% - 15px) calc(40% - 15px);
+    grid-template-rows: 180px 180px;
+  }
+
+  .fourth__h3 {
+    font-size: 24px;
   }
 }
