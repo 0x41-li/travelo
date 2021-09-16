@@ -435,7 +435,7 @@ main {
 
 .first {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../assets/images/first-section/first-section-background.png);
+    url("../assets/images/first-section/first-section-background.png");
   padding: 10px 0px;
   padding-bottom: 30px;
 }
