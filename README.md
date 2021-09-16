@@ -1,3 +1,3 @@
 # travelo
 A Travel Website Landing Page.
-The Live Site: git@github.com:0x41-li/travelo.git.
+The Live Site: https://0x41-li.github.io/travelo/.
