@@ -20,6 +20,11 @@ function init() {
       spaceBetween: 30,
       grabCursor: true,
       slidesOffsetAfter: 80,
+      breakpoints : {
+        768: {
+          spaceBetween: 60
+        }
+      }
     });
   }
 
