@@ -435,7 +435,7 @@ main {
 
 .first {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(./assets/images/first-section/first-section-background.png);
+    url(../assets/images/first-section/first-section-background.png);
   padding: 10px 0px;
   padding-bottom: 30px;
 }
@@ -832,21 +832,21 @@ main {
 
 .fourth__blog-link:nth-child(1) .fourth__blog-box {
   background: linear-gradient(rgba(65, 65, 65, 0.5), rgba(65, 65, 65, 0.5)),
-    url(./assets/images/fourth-section/mount-kilimanjaro.png) no-repeat center
+    url(../assets/images/fourth-section/mount-kilimanjaro.png) no-repeat center
       bottom;
   background-size: 110%;
 }
 
 .fourth__blog-link:nth-child(2) .fourth__blog-box {
   background: linear-gradient(rgba(65, 65, 65, 0.5), rgba(65, 65, 65, 0.5)),
-    url(./assets/images/fourth-section/plane_s-window.png) no-repeat center
+    url(../assets/images/fourth-section/plane_s-window.png) no-repeat center
       bottom;
   background-size: 110%;
 }
 
 .fourth__blog-link:nth-child(3) .fourth__blog-box {
   background: linear-gradient(rgba(65, 65, 65, 0.5), rgba(65, 65, 65, 0.5)),
-    url(./assets/images/fourth-section/female-on-a-frontyard.png) no-repeat
+    url(../assets/images/fourth-section/female-on-a-frontyard.png) no-repeat
       center bottom;
   background-size: 110%;
 }
@@ -897,7 +897,7 @@ main {
   border-radius: 18px;
   padding: 20px 10px;
   padding-left: 60px;
-  background: url(./assets/images/fifth-section/quote-icon.png) no-repeat;
+  background: url(../assets/images/fifth-section/quote-icon.png) no-repeat;
   background-size: 40px;
   background-position: left 10px top 20px;
   display: flex;
@@ -1123,7 +1123,7 @@ footer {
 
   .first__input__search {
     padding-left: 36px;
-    background-image: url(./assets/images/first-section/search-icon.png);
+    background-image: url(../assets/images/first-section/search-icon.png);
     background-repeat: no-repeat;
     background-size: 13px;
     background-position: 16px center;
