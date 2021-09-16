@@ -13,6 +13,14 @@ function init() {
     if (windowWidth >= 1024) {
       thirdMenuSelectingAndSliderFunc();
     }
+
+    let swiper = new Swiper(".swiper", {
+      slidesPerView: "auto",
+      centeredSlides: false,
+      spaceBetween: 30,
+      grabCursor: true,
+      slidesOffsetAfter: 80,
+    });
   }
 
   // Menu func
@@ -101,13 +109,13 @@ function init() {
           slider.style.left = "0px";
         } else if (sliderNValue == 2) {
           bottomLine.style.left = tab.clientWidth + "px";
-          slider.style.left = - slider.clientWidth + "px";
+          slider.style.left = -slider.clientWidth + "px";
         } else if (sliderNValue == 3) {
           bottomLine.style.left = tab.clientWidth * 2 + "px";
-          slider.style.left = - (slider.clientWidth * 2) + "px";
+          slider.style.left = -(slider.clientWidth * 2) + "px";
         } else if (sliderNValue == 4) {
           bottomLine.style.left = tab.clientWidth * 3 + "px";
-          slider.style.left = - (slider.clientWidth * 3) + "px";
+          slider.style.left = -(slider.clientWidth * 3) + "px";
         }
       });
     });
