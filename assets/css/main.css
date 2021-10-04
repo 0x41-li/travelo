@@ -1463,4 +1463,8 @@ footer {
     max-width: 1366px;
     margin: auto;
   }
+
+  footer {
+    max-width: 1366px;
+  }
 }
